@@ -1,0 +1,186 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #f9fafb;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  background: #1e293b;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: white;
+  color: #2563eb;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e0e7ff;
+}
+
+/* Features */
+.features {
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+}
+
+.feature-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.feature-box {
+  background: #f1f5f9;
+  padding: 20px;
+  flex: 1 1 300px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.feature-box h3 {
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+/* About */
+.about {
+  padding: 60px 20px;
+  background: #e2e8f0;
+  text-align: center;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  background: white;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact button {
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #1d4ed8;
+}
+
+/* Footer */
+footer {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .feature-grid {
+    flex-direction: column;
+  }
+}
